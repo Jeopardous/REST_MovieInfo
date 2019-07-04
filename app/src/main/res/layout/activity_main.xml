@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nice_black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="80">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/full_round_border"
+                android:hint="search movie..."
+                android:inputType="textAutoComplete"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="20">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/full_round_border"
+                android:inputType="textAutoComplete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/movie_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:padding="4dp"
+                    android:background="@drawable/full_round_border"
+                    android:text="Adarsh The Boss"
+                    android:textColor="@color/nice_black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/movie_thumb"
+                android:layout_width="150dp"
+                android:layout_gravity="center"
+                android:layout_height="150dp"
+                android:layout_marginTop="2dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:weightSum="100"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rating:"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/nice_black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OverView:"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/nice_black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0/10"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/nice_black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:id="@+id/movie_overview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="............"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/nice_black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

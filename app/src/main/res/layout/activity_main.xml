@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:menu="http://schemas.android.com/apk/res-auto"
     android:background="@color/nice_black"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -14,34 +15,20 @@
         android:orientation="horizontal"
         android:weightSum="100">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="?actionBarSize"
-            android:layout_weight="80">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:elevation="4dp"
+            android:background="@color/nice_grey"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="?actionBarSize">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBar"
 
-            <EditText
-                android:id="@+id/search_bar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginLeft="8dp"
-                android:background="@drawable/full_round_border"
-                android:hint="search movie..."
-                android:inputType="textAutoComplete"
-                android:padding="10dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="?actionBarSize"
-            android:layout_weight="20">
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:layout_marginLeft="8dp"
-                android:background="@drawable/full_round_border"
-                android:inputType="textAutoComplete" />
-        </LinearLayout>
+                android:layout_height="match_parent">
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
 
     </LinearLayout>
 

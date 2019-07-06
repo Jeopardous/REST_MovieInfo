@@ -13,7 +13,7 @@ public interface Service {
     @GET("movie/popular")
     Call<MovieResponse> getPopularMovie(@Query("api_key") String apikey);
 
-    @GET("search/keyword")
+    @GET("search/multi")
     Call<MovieResponse> getBestSearch(@Query("key_word") String keyword,@Query("api_key") String apiKey);
 
     @GET("movie/{id}")

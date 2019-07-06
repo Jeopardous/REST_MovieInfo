@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.r2d2.MainActivity">
 
     <item
+        android:orderInCategory="100"
         android:id="@+id/search"
         android:title="Search"
         android:icon="@drawable/ic_search"
-        app:showAsAction="ifRoom"
-        />
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
 </menu>

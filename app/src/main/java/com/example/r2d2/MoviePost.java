@@ -4,11 +4,12 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 public class MoviePost {
-    public MoviePost(String orignalITitle, String overview, Double voteAverage,String posterPath) {
+    public MoviePost(String orignalITitle, String overview, Double voteAverage,String posterPath,String name) {
         this.orignalITitle = orignalITitle;
         this.overview = overview;
         this.posterPath=posterPath;
         this.voteAverage = voteAverage;
+        this.name=name;
     }
 
 
@@ -24,6 +25,18 @@ public class MoviePost {
     @SerializedName("poster_path")
     @Expose
     private String posterPath;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @SerializedName("name")
+    @Expose
+    private String name;
 
     public String getOrignalITitle() {
         return orignalITitle;
@@ -56,6 +69,7 @@ public class MoviePost {
     public void setPosterPath(String posterPath) {
         this.posterPath = posterPath;
     }
+
 
     @Override
     public String toString() {
